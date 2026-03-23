@@ -5,7 +5,6 @@ import { initials } from '../utils';
 interface AvatarProps {
   user: User;
   size?: number;
-  className?: string;
 }
 
 const Avatar: React.FC<AvatarProps> = ({ user, size = 28 }) => {

@@ -13,8 +13,6 @@ interface CollabUser extends User {
 interface DragState {
   task: Task;
   origin: Status;
-  startX: number;
-  startY: number;
   offsetX: number;
   offsetY: number;
 }
@@ -263,8 +261,6 @@ const KanbanView: React.FC<KanbanViewProps> = ({ tasks, collab, onStatusChange }
     setDragState({
       task,
       origin,
-      startX: e.clientX,
-      startY: e.clientY,
       offsetX: e.clientX - rect.left,
       offsetY: e.clientY - rect.top,
     });

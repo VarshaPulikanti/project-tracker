@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { Task, Filters, Status } from '../types';
+import { Task, Filters, Status, Priority } from '../types';
 import { INITIAL_TASKS } from '../data/seed';
 
 interface TaskStore {
